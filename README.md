@@ -3,7 +3,7 @@ viennaphp/talks
 
 Storing all talk pdfs for the ViennaPHP Usergroup
 
-October
+October 2013
 -------
 
 * Sebastian Göttschkes: composer in 2 minutes
