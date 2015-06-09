@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Martin Heuschober" />
+  <meta name="author" content="CC-BY-NC-SA 4.0" />
+  <title>I show you my λs - you show me yours!</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+    </style>
+    <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" media="print" href="reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">I show you my λs - you show me yours!</h1>
+    <h2 class="author">Martin Heuschober</h2>
+    <h2 class="author"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a></h2>
+    <h3 class="date">June 9<sup>th</sup> 2015</h3>
+</section>
+
+<section class="slide level2">
+
+<link rel="stylesheet" href="highlight.js/styles/solarized_light.css"> <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+<script src="highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- $ pandoc -t revealjs -s % -o index.html -->
+
+<!--
+
+> module Readme where
+
+> import Data.Function (on)
+> import Data.List ((\\),subsequences, sortBy, groupBy, intercalate)
+> import Data.List.Split (chunksOf)
+> import Data.Ord (comparing)
+
+-->
+
+</section>
+<section><section id="intro" class="titleslide slide level1"><h1>Intro</h1></section><section id="me" class="slide level2">
+<h1>Me</h1>
+<ul>
+<li>Martin Heuschober (<a href="https://www.twitter.com/epsilonhalbe">epsilonhalbe</a>)</li>
+<li>Mathematician/Programmer</li>
+<li><a href="www.meetup.com/Lambdaheads/">meetup@Lambdaheads</a></li>
+<li>Work Terna/T-Systems (ab Juli)</li>
+</ul>
+</section><section id="haskell" class="slide level2">
+<h1>Haskell</h1>
+<ul>
+<li>pure</li>
+<li>functional</li>
+<li>easier than it looks</li>
+<li>but still intimidating</li>
+<li>worth your while</li>
+</ul>
+</section></section>
+<section><section id="my-λ" class="titleslide slide level1"><h1>My λ</h1></section><section id="the-task" class="slide level2">
+<h1>The Task</h1>
+<p>Generate Test-Data for a Minesweeper-like Coding Dojo</p>
+<pre class="sourceCode markdown"><code class="sourceCode markdown">input        |  output
+6 5          |
+--x--        |  ␣1B1␣
+-----        |  12121
+x---x        |  B1␣1B
+-----        |  11␣11
+-----        |  23332
+xxxxx        |  BBBBB</code></pre>
+</section><section id="base-cases" class="slide level2">
+<h1>Base Cases</h1>
+<p>The minimal cases for such a task would be the board with no and a single entry, but these cases would be not capturing the full breadth of this problem.</p>
+<div class="fragment">
+<p>The heart of this problem would be captured in the field:</p>
+<pre class="sourceCode markdown"><code class="sourceCode markdown">---       xxx
+-?- . . . x?x
+---       xxx</code></pre>
+<p>Where the middle field is the one in question - it can be surrounded by no or at the maximum 8 <code>Bombs</code>.</p>
+</div>
+</section><section id="so-how-many-different-33-fields-are-there" class="slide level2">
+<h1>So how many different 3×3-Fields are there?</h1>
+<p>Omitting the middle field, we see that 8 fields can either be a bomb or not, so each fields corresponds to an 8-digit binary number a.k.a. a byte, so we have <span class="math">256</span>-many different minefields. Which leads to the next conclusion:</p>
+<p><em>&quot;We don't want to write all those test-cases by hand!&quot;</em></p>
+</section></section>
+<section><section id="haskell-to-the-rescue" class="titleslide slide level1"><h1>Haskell to the rescue</h1></section><section id="first-observation" class="slide level2">
+<h1>First observation</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">λ<span class="fu">&gt;</span> <span class="fu">:</span>t <span class="st">&quot;abcdefg&quot;</span> <span class="co">-- a String</span>
+<span class="st">&quot;abcdefg&quot;</span><span class="ot"> ::</span> [<span class="dt">Char</span>]</code></pre>
+<div class="fragment">
+<p><code>String</code>s are just a type synonym for <code>[Char]</code> <em>(list of characters)</em>.</p>
+</div>
+</section><section id="second-observation" class="slide level2">
+<h1>Second observation</h1>
+<p>Lists are a well understood thing with lots of &quot;listy&quot; functions to support it.</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">λ<span class="fu">&gt;</span> <span class="kw">import </span><span class="dt">Data.List</span>
+λ<span class="fu">&gt;</span> [<span class="dv">1</span><span class="fu">..</span><span class="dv">9</span>]
+[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>]
+λ<span class="fu">&gt;</span> <span class="fu">:</span>t subsequences
+<span class="ot">subsequences ::</span> [a] <span class="ot">-&gt;</span> [[a]]
+λ<span class="fu">&gt;</span> subsequences [<span class="dv">1</span><span class="fu">..</span><span class="dv">3</span>]
+[[],[<span class="dv">1</span>],[<span class="dv">2</span>],[<span class="dv">1</span>,<span class="dv">2</span>],[<span class="dv">3</span>],[<span class="dv">1</span>,<span class="dv">3</span>],[<span class="dv">2</span>,<span class="dv">3</span>],[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]]</code></pre>
+</section><section class="slide level2">
+
+<p>Enumerating all fields we get:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dv">123</span>
+<span class="dv">4</span> <span class="dv">6</span> <span class="ot">=&gt;</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>] <span class="fu">=</span> [<span class="dv">1</span><span class="fu">..</span><span class="dv">9</span>]\\[<span class="dv">5</span>]
+<span class="dv">789</span></code></pre>
+<p>and with a little help of functions we can transform this to our minimal boards</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">λ<span class="fu">&gt;</span> <span class="kw">import </span><span class="dt">Data.List.Split</span>
+λ<span class="fu">&gt;</span> <span class="fu">:</span>t chunksOf <span class="dv">3</span>
+chunksOf <span class="dv">3</span><span class="ot"> ::</span> [a] <span class="ot">-&gt;</span> [[a]]
+λ<span class="fu">&gt;</span> chunksOf <span class="dv">3</span> [<span class="dv">1</span><span class="fu">..</span><span class="dv">9</span>]
+[[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>],[<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>],[<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>]]
+λ<span class="fu">&gt;</span> putStrLn (unlines <span class="fu">$</span> chunksOf <span class="st">&quot;x-x-x-x-x&quot;</span>)
+ x<span class="fu">-</span>x
+ <span class="fu">-</span>x<span class="fu">-</span>
+ x<span class="fu">-</span>x</code></pre>
+</section><section class="slide level2">
+
+<pre class="sourceCode haskell"><code class="sourceCode haskell">
+<span class="fu">&gt;</span> minimalBoards <span class="fu">=</span> subsequences ([<span class="dv">1</span><span class="fu">..</span><span class="dv">9</span>]\\[<span class="dv">5</span>])<span class="ot"> ::</span> [[<span class="dt">Int</span>]]</code></pre>
+</section><section id="functions-be-your-friend" class="slide level2">
+<h1>Functions be your friend</h1>
+<p>Though intimidating</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">
+<span class="fu">&gt;</span><span class="ot"> fun ::</span> [<span class="dt">Int</span>] <span class="ot">-&gt;</span> <span class="dt">String</span>
+<span class="fu">&gt;</span> fun lst <span class="fu">=</span> map (<span class="ot">`aux`</span> lst) [<span class="dv">1</span><span class="fu">..</span><span class="dv">9</span><span class="ot">::</span><span class="dt">Int</span>]
+<span class="fu">&gt;</span>   <span class="kw">where</span> aux x lst <span class="fu">=</span> <span class="kw">if</span> x <span class="ot">`elem`</span> lst  <span class="kw">then</span> <span class="ch">&#39;x&#39;</span> <span class="kw">else</span> <span class="ch">&#39;-&#39;</span></code></pre>
+<p>They make your life easier</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">λ<span class="fu">&gt;</span> map (\x <span class="ot">-&gt;</span> x<span class="fu">*</span>x) [<span class="dv">1</span><span class="fu">..</span><span class="dv">5</span>]
+<span class="co">-- map (\x -&gt; x*x) [1,2,3,4,5]</span>
+<span class="co">--[1*1,2*2,3*3,4*4,5*5]</span>
+  [<span class="dv">1</span>  ,<span class="dv">4</span>  ,<span class="dv">9</span>  ,<span class="dv">16</span> ,<span class="dv">25</span> ]</code></pre>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">λ<span class="fu">&gt;</span> <span class="dv">1</span> <span class="ot">`elem`</span> [<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">1</span>]
+<span class="dt">True</span>
+λ<span class="fu">&gt;</span> <span class="dv">4</span> <span class="ot">`elem`</span> [<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">1</span>]
+<span class="dt">False</span>
+λ<span class="fu">&gt;</span> fun [<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">9</span>]
+<span class="st">&quot;x---xx--x&quot;</span></code></pre>
+</section></section>
+<section><section id="step-it-up" class="titleslide slide level1"><h1>Step it Up</h1></section><section id="creating-groups" class="slide level2">
+<h1>Creating Groups</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">
+<span class="fu">&gt;</span><span class="ot"> sortBoards ::</span> [[[<span class="dt">Int</span>]]]
+<span class="fu">&gt;</span> sortBoards <span class="fu">=</span> groupBy ((<span class="fu">==</span>) <span class="ot">`on`</span> length) <span class="fu">$</span>
+<span class="fu">&gt;</span>    sortBy (comparing length) minimalBoards</code></pre>
+</section><section id="decomposing" class="slide level2">
+<h1>Decomposing</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">λ<span class="fu">&gt;</span> groupBy (<span class="fu">==</span>) <span class="st">&quot;aaBBccddddccbaaaaaaaaa&quot;</span>
+[<span class="st">&quot;aa&quot;</span>,<span class="st">&quot;BB&quot;</span>,<span class="st">&quot;cc&quot;</span>,<span class="st">&quot;dddd&quot;</span>,<span class="st">&quot;cc&quot;</span>,<span class="st">&quot;b&quot;</span>,<span class="st">&quot;aaaaaaaaa&quot;</span>]
+λ<span class="fu">&gt;</span> <span class="kw">let</span> a <span class="fu">=</span> it
+λ<span class="fu">&gt;</span> sortBy (comparing length) a
+[<span class="st">&quot;b&quot;</span>,<span class="st">&quot;aa&quot;</span>,<span class="st">&quot;BB&quot;</span>,<span class="st">&quot;cc&quot;</span>,<span class="st">&quot;cc&quot;</span>,<span class="st">&quot;dddd&quot;</span>,<span class="st">&quot;aaaaaaaaa&quot;</span>]</code></pre>
+</section><section id="and-combining" class="slide level2">
+<h1>And Combining</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">
+<span class="fu">&gt;</span> allPossibleInputs <span class="fu">=</span> map (map (unlines <span class="fu">.</span> chunksOf <span class="dv">3</span> <span class="fu">.</span> fun)) sortBoards
+
+λ<span class="fu">&gt;</span> head allPossibleInputs
+[<span class="st">&quot;---\n---\n---\n&quot;</span>]
+λ<span class="fu">&gt;</span> mapM_ putStr <span class="fu">$</span> head allPossibleInputs
+ <span class="fu">---</span>
+ <span class="fu">---</span>
+ <span class="fu">---</span></code></pre>
+</section></section>
+<section><section id="last-but-not-least" class="titleslide slide level1"><h1>Last but not least</h1></section><section id="preparing" class="slide level2">
+<h1>Preparing</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">
+<span class="fu">&gt;</span> content <span class="fu">=</span> [(<span class="st">&quot;3 3\n&quot;</span><span class="fu">++</span>x,show j<span class="fu">++</span><span class="st">&quot;-Bomb-input&quot;</span><span class="fu">++</span>show i)
+<span class="fu">&gt;</span>           <span class="fu">|</span> (b,j) <span class="ot">&lt;-</span> a , (i,x) <span class="ot">&lt;-</span> b]
+<span class="fu">&gt;</span>         <span class="kw">where</span> a <span class="fu">=</span> zip (map (zip [<span class="dv">0</span><span class="fu">..</span>]) allPossibleInputs) [<span class="dv">0</span><span class="fu">..</span>]
+
+λ<span class="fu">&gt;</span> take <span class="dv">2</span> content
+[(<span class="st">&quot;3 3\n---\n---\n---\n&quot;</span>,<span class="st">&quot;0-Bomb-input0&quot;</span>)
+,(<span class="st">&quot;3 3\nx--\n---\n---\n&quot;</span>,<span class="st">&quot;1-Bomb-input0&quot;</span>)]</code></pre>
+</section><section id="write-to-file" class="slide level2">
+<h1>Write to File</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">
+<span class="fu">&gt;</span><span class="ot"> main ::</span> <span class="dt">IO</span> ()
+<span class="fu">&gt;</span> main <span class="fu">=</span> <span class="kw">do</span> putStrLn <span class="st">&quot;Writing a bunch of files to the current directory&quot;</span>
+<span class="fu">&gt;</span>           mapM_ (\(str,fname) <span class="ot">-&gt;</span> writeFile fname str) content
+<span class="fu">&gt;</span>           putStrLn <span class="st">&quot;Done!&quot;</span></code></pre>
+</section><section id="thank-you" class="slide level2">
+<h1>Thank you</h1>
+<p>Find me at twitter/github <span class="citation" data-cites="epsilonhalbe">@epsilonhalbe</span></p>
+<p>📧 : <code>map (pred.pred) &quot;octvkp0jgwuejqdgtBiockn0eqo&quot;</code></p>
+<p>and go to <a href="https://tryhaskell.org">tryhaskell.org</a> have fun</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>
