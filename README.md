@@ -6,7 +6,7 @@ Storing all talk pdfs for the ViennaPHP Usergroup
 June 2015
 ---------
 
-* [Martin Scheuhuber](https://github.com/epsilonhalbe): [Haskell for PHP devs](201506/00-haskell-for-php-devs)
+* [Martin Heuschober](https://github.com/epsilonhalbe): [Haskell for PHP devs](201506/00-haskell-for-php-devs)
 
 May 2015
 --------
