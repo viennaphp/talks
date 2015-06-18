@@ -1,5 +1,7 @@
+![#ViennaPHP](https://raw.githubusercontent.com/viennaphp/talks/master/src/images/ViennaPHP_.jpg "ViennaPHP" )  
+
 viennaphp/talks
-===============
+======================
 
 
 Storing all talk pdfs for the ViennaPHP Usergroup
