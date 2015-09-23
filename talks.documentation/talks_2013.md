@@ -11,7 +11,9 @@ December
 
 November
 --------
-*Coming soon!*
+* [Sebastian Goettschkes](https://twitter.com/Sgoettschkes): [Behat in 2 minutes](../201311/00_behat_in_2_minutes.pdf)
+* [David Mytton](): [High Performance Infrastructure](../201311/01_high_performance_infrastructure.pdf)
+
 
 October
 -------
