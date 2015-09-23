@@ -15,9 +15,9 @@ November
 
 October
 -------
-* [Sebastian Goettschkes](https://twitter.com/Sgoettschkes): [Composer in 2 minutes](./201310/00_composer_in_2_minutes.pdf)
-* [Michael Klobutschar and Klaus Purer](): [Developing with Drupal](./201310/01_developing_with_drupal.pdf)
-* [Stefan Hupe](): [Debug Messages and Logging with Monolog](./201310/02_debug_messages_and_logging_with_monolog.pdf)
+* [Sebastian Goettschkes](https://twitter.com/Sgoettschkes): [Composer in 2 minutes](../201310/00_composer_in_2_minutes.pdf)
+* [Michael Klobutschar and Klaus Purer](): [Developing with Drupal](../201310/01_developing_with_drupal.pdf)
+* [Stefan Hupe](): [Debug Messages and Logging with Monolog](../201310/02_debug_messages_and_logging_with_monolog.pdf)
 
 September
 ---------
