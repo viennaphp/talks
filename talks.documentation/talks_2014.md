@@ -57,4 +57,4 @@ January
 
 ## Go Back to Main page 
 
-[README](../talks/README.md)  
+[README](../README.md)  

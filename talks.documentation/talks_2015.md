@@ -79,4 +79,4 @@ January (Welcome 2015)
  
 ## Go Back to Main page 
 
-[README](../talks/README.md)  
+[README](../README.md)  
