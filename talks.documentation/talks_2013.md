@@ -7,7 +7,10 @@ Storing all talk pdfs for the ViennaPHP Usergroup
 
 December
 --------
-*Coming soon!*
+* [Sebastian Goettschkes](https://twitter.com/Sgoettschkes): [Behat in 2 minutes](../201312/00_wazzup.pdf)
+* [Michael Nitschinger](): [Couchbase](../201312/02_couchbase.pdf)
+* [Stefan]( ): [Documentation Drive Development](../201312/03_documentation_drive_development.pdf)
+
 
 November
 --------
