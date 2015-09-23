@@ -16,8 +16,8 @@ October
 September
 ---------
 
-* [Ali Sharif](): [Creating a better Developer Experience]()
-* [Jakob Oberhummer](https://github.com/phbergsmann): [Interpreter changes in PHP7 and the RFCs](../201509/00-php7-talk-slides.pdf)
+* [Ali Sharif](https://medium.com/@sharifsbeat): [Creating a better Developer Experience]()
+* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Interpreter changes in PHP7 and the RFCs](../201509/00-php7-talk-slides.pdf)
 
 
 August
