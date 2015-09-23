@@ -1,9 +1,31 @@
 viennaphp/talks (2015)
 ================
 
-Storing all talk pdfs for the ViennaPHP Usergroup
+Storing all talk pdfs for the ViennaPHP Community 
+
+November
+-------
+*Coming soon!*
+
+October
+-------
+*Coming soon!*
+<!-- * [ Patrik Karisch](): [Bartacus - Modernizing legacy CMS applications with Symfony]() --> 
 
 
+September
+---------
+
+* [Ali Sharif](): [Creating a better Developer Experience]()
+* [Jakob Oberhummer](https://github.com/phbergsmann): [Interpreter changes in PHP7 and the RFCs](201509/00-php7-talk-slides.pdf)
+
+
+August
+------
+
+* Summer break :) Enjoy in SUMMER :)
+ 
+ 
 July
 -----
 
@@ -15,7 +37,7 @@ June
 -----
 
 * [Martin Heuschober](https://github.com/epsilonhalbe): [Haskell for PHP devs](201506/00-haskell-for-php-devs)
-* [Ali Sharif](https://github.com/epsilonhalbe): [Functional programming in PHP](201506)
+* [Ali Sharif](): [Functional programming in PHP](201506)
 
 
 May
