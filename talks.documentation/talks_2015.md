@@ -9,14 +9,15 @@ November
 
 October
 -------
-*Coming soon!*
-<!-- * [ Patrik Karisch](): [Bartacus - Modernizing legacy CMS applications with Symfony]() --> 
+
+* [ Pascal Paulis ](https://lu.linkedin.com/pub/pascal-paulis/40/115/ba0): [The Continuous Talk](../201510/00_The_Continuous_Talk.pdf)
+* [ Patrik Karisch](https://twitter.com/PatrikKarisch): [Bartacus - Modernizing legacy CMS applications with Symfony]() 
 
 
 September
 ---------
 
-* [Ali Sharif](https://medium.com/@sharifsbeat): [Creating a better Developer Experience]()
+* [Ali Sharif](https://medium.com/@sharifsbeat): [Creating a better Developer Experience]() 
 * [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Interpreter changes in PHP7 and the RFCs](../201509/00-php7-talk-slides.pdf)
 
 
