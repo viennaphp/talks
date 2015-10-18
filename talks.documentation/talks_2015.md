@@ -11,7 +11,7 @@ October
 -------
 
 * [ Pascal Paulis ](https://lu.linkedin.com/pub/pascal-paulis/40/115/ba0): [The Continuous Talk](../201510/00_The_Continuous_Talk.pdf)
-* [ Patrik Karisch](https://twitter.com/PatrikKarisch): [Bartacus - Modernizing legacy CMS applications with Symfony]() 
+* [ Patrik Karisch](https://twitter.com/PatrikKarisch): [Bartacus - Modernizing legacy CMS applications with Symfony](../201510/01_Bartacus_TYPO3-and-Symfony.pdf) 
 
 
 September
