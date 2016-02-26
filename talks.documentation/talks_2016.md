@@ -1,4 +1,4 @@
-viennaphp/talks (2015)
+viennaphp/talks (2016)
 ================
 
 Storing all talk pdfs for the ViennaPHP Community 
