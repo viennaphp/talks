@@ -4,6 +4,18 @@ viennaphp/talks (2016)
 Storing all talk pdfs for the ViennaPHP Community 
 
 
+
+
+
+April 
+--------
+
+* [Michael Rutz](https://twitter.com/m_bymike): [PHP, Arrays & Functional Programming](http://www.slideshare.net/MichaelRutz/php-arrays-functional-programming)
+* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201603)
+
+
+
+
 March 
 --------
 
