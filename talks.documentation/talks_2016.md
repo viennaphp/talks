@@ -4,6 +4,12 @@ viennaphp/talks (2016)
 Storing all talk pdfs for the ViennaPHP Community 
 
 
+May 
+--------
+
+* [Patrik Karisch](http://www.karisch.guru/): [Boost up your code with Specifications](http://slides.pixelart.at/2016-05-12/viennaphp/specifications/#/)
+* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201603)
+
 
 
 
