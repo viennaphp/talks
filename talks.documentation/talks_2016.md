@@ -1,10 +1,20 @@
 viennaphp/talks (2016)
 ================
 
-Storing all talk pdfs for the ViennaPHP Community 
+Storing all talk pdfs for the ViennaPHP Community
+
+June
+--------
+
+* [Matthias Zeis](http://www.matthias-zeis.com/): [Migrating from Magento 1 to Magento 2](../201606)
+* [Dusan Kasan](http://dusankasan.com/): [Forget about loops, welcome to collection pipelines](../201606)
+* [Michael Schramm](http://blog.ms07.at/): [Symfony Service Container](../201606/03-the-symfony-service-container.pdf)
+* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [SESSION IV -> Databases! Differences between Storages, Services and a short overview when to use what](../201606)
 
 
-May 
+
+
+May
 --------
 
 * [Patrik Karisch](http://www.karisch.guru/): [Boost up your code with Specifications](http://slides.pixelart.at/2016-05-12/viennaphp/specifications/#/)
@@ -13,7 +23,7 @@ May
 
 
 
-April 
+April
 --------
 
 * [Michael Rutz](https://twitter.com/m_bymike): [PHP, Arrays & Functional Programming](http://www.slideshare.net/MichaelRutz/php-arrays-functional-programming)
@@ -22,7 +32,7 @@ April
 
 
 
-March 
+March
 --------
 
 * [Patrik Karisch](http://www.karisch.guru/): [The everydays basics of Caching and Performance](../201603/03_the-everyday-basics-of-caching-and-performance.pdf)
@@ -39,15 +49,15 @@ March
 * [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201603)
 
 
-February 
+February
 --------
 
 * [Christoph Hochstrasser](https://hochstrasser.io): [Look, no database](../201602/00_christoph_hochstrasser_decoupled_ecommerce_viennaphp.pdf)
 * [Stephanie Ness](https://at.linkedin.com/in/nessstephanie/en): [Doctrine and Laravel 5](../201602/.pdf)
 
 
-  
- 
-## Go Back to Main page 
+
+
+## Go Back to Main page
 
 [README](../README.md)  
