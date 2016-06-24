@@ -27,7 +27,7 @@ April
 --------
 
 * [Michael Rutz](https://twitter.com/m_bymike): [PHP, Arrays & Functional Programming](http://www.slideshare.net/MichaelRutz/php-arrays-functional-programming)
-* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201604/01_ViennaPHP_SQL.pdf)
+* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [SESSION II -> SQL](../201604/01_ViennaPHP_SQL.pdf)
 
 
 
@@ -46,7 +46,7 @@ March
   * [Setting cache headers with configuration and matching rules](https://foshttpcachebundle.readthedocs.org/en/stable/features/headers.html)
 * [Anna Völkl](http://anna.voelkl.at): [Secure input and output handling for Magento 1&2](http://de.slideshare.net/avoelkl/secure-input-and-output-handling-viennaphp)
 * [Florian Eckerstorfer](https://florian.ec/): [The Golden Age of Continues Integration](../201603/02_the-golden-age-of-continuous-integration.pdf)
-* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201603/01_PHP_Vienna_Talk_Databases_introduction.pdf)
+* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201603/01_PHP_Vienna-Talk-Databases-introduction.pdf)
 
 
 February
