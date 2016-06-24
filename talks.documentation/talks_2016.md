@@ -9,7 +9,7 @@ June
 * [Matthias Zeis](http://www.matthias-zeis.com/): [Migrating from Magento 1 to Magento 2](../201606)
 * [Dusan Kasan](http://dusankasan.com/): [Forget about loops, welcome to collection pipelines](../201606/04-forget-about-loops.pdf)
 * [Michael Schramm](http://blog.ms07.at/): [Symfony Service Container](../201606/03-the-symfony-service-container.pdf)
-* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [SESSION IV -> Databases! Differences between Storages, Services and a short overview when to use what](../201606)
+* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [SESSION IV -> NoSQL-overview-and-graphs](../201606/01_NoSQL-overview-and-graphs-final-chapter.pdf)
 
 
 
@@ -18,7 +18,7 @@ May
 --------
 
 * [Patrik Karisch](http://www.karisch.guru/): [Boost up your code with Specifications](http://slides.pixelart.at/2016-05-12/viennaphp/specifications/#/)
-* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201603)
+* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [SESSION III -> NoSQL-Document-Storage](../201605/01_NoSQL-Document-Storage.pdf)
 
 
 
@@ -27,7 +27,7 @@ April
 --------
 
 * [Michael Rutz](https://twitter.com/m_bymike): [PHP, Arrays & Functional Programming](http://www.slideshare.net/MichaelRutz/php-arrays-functional-programming)
-* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201603)
+* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201604/01_ViennaPHP_SQL.pdf)
 
 
 
@@ -46,7 +46,7 @@ March
   * [Setting cache headers with configuration and matching rules](https://foshttpcachebundle.readthedocs.org/en/stable/features/headers.html)
 * [Anna Völkl](http://anna.voelkl.at): [Secure input and output handling for Magento 1&2](http://de.slideshare.net/avoelkl/secure-input-and-output-handling-viennaphp)
 * [Florian Eckerstorfer](https://florian.ec/): [The Golden Age of Continues Integration](../201603/02_the-golden-age-of-continuous-integration.pdf)
-* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201603)
+* [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [Databases! Differences between Storages, Services and a short overview when to use what](../201603/01_PHP_Vienna_Talk_Databases_introduction.pdf)
 
 
 February
