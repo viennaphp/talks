@@ -7,7 +7,7 @@ June
 --------
 
 * [Matthias Zeis](http://www.matthias-zeis.com/): [Migrating from Magento 1 to Magento 2](../201606)
-* [Dusan Kasan](http://dusankasan.com/): [Forget about loops, welcome to collection pipelines](../201606)
+* [Dusan Kasan](http://dusankasan.com/): [Forget about loops, welcome to collection pipelines](../201606/04-forget-about-loops.pdf)
 * [Michael Schramm](http://blog.ms07.at/): [Symfony Service Container](../201606/03-the-symfony-service-container.pdf)
 * [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [SESSION IV -> Databases! Differences between Storages, Services and a short overview when to use what](../201606)
 
