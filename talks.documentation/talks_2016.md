@@ -6,7 +6,7 @@ Storing all talk pdfs for the ViennaPHP Community
 June
 --------
 
-* [Matthias Zeis](http://www.matthias-zeis.com/): [Migrating from Magento 1 to Magento 2](../201606)
+* [Matthias Zeis](http://www.matthias-zeis.com/): [Migrating from Magento 1 to Magento 2](http://de.slideshare.net/mzeis/how-to-migrate-from-magento-1-to-magento-2)
 * [Dusan Kasan](http://dusankasan.com/): [Forget about loops, welcome to collection pipelines](../201606/04-forget-about-loops.pdf)
 * [Michael Schramm](http://blog.ms07.at/): [Symfony Service Container](../201606/03-the-symfony-service-container.pdf)
 * [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [SESSION IV -> NoSQL-overview-and-graphs](../201606/01_NoSQL-overview-and-graphs-final-chapter.pdf)
