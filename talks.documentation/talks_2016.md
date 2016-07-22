@@ -3,6 +3,16 @@ viennaphp/talks (2016)
 
 Storing all talk pdfs for the ViennaPHP Community
 
+July
+--------
+
+* [Robert Koch]()
+    * [Slides - Using Docker as PHP Developer](../201607/01_Using-Docker-as-PHP-developer-at-viennaPHP.pdf)
+    * [Demo - Using Docker as PHP Developer ](../201607/02_Docker-Demo.7z)
+
+* [Dejan Ivkovic](): [Handmade Webshop](../201607/)
+
+
 June
 --------
 
