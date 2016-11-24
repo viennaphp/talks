@@ -3,6 +3,14 @@ viennaphp/talks (2016)
 
 Storing all talk pdfs for the ViennaPHP Community
 
+November
+--------
+
+* [Michael Osl](https://www.michael-osl.at/)
+	* [Slides - Microservices with PHP and ZeroMQ](../201611/01_Microservices_with_PHP_and_ZeroMQ.pdf)
+	* [Bushtaxi Demo Project](https://github.com/moee/bushtaxi-demo)
+	* [Bushtaxi Github Project](https://github.com/moee/bushtaxi)
+
 July
 --------
 
