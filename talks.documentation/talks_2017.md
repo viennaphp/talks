@@ -3,6 +3,13 @@ viennaphp/talks (2017)
 
 Storing all talk pdfs for the ViennaPHP Community
 
+
+March
+-----
+
+* [Michael Schramm](https://www.gosepp.com): [Building a Bot](../201703/03_building-a-bot.pdf)
+
+
 February
 --------
 
