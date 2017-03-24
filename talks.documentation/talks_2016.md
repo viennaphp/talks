@@ -10,6 +10,14 @@ November
 	* [Slides - Microservices with PHP and ZeroMQ](../201611/01_Microservices_with_PHP_and_ZeroMQ.pdf)
 	* [Bushtaxi Demo Project](https://github.com/moee/bushtaxi-demo)
 	* [Bushtaxi Github Project](https://github.com/moee/bushtaxi)
+	
+	
+September
+---------
+
+* [Michael Schramm](): [PHP beyond servers](../201609/02_php_beyond_servers.pdf)
+
+
 
 July
 --------
@@ -30,8 +38,6 @@ June
 * [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [SESSION IV -> NoSQL-overview-and-graphs](../201606/01_NoSQL-overview-and-graphs-final-chapter.pdf)
 
 
-
-
 May
 --------
 
@@ -39,15 +45,11 @@ May
 * [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [SESSION III -> NoSQL-Document-Storage](../201605/01_NoSQL-Document-Storage.pdf)
 
 
-
-
 April
 --------
 
 * [Michael Rutz](https://twitter.com/m_bymike): [PHP, Arrays & Functional Programming](http://www.slideshare.net/MichaelRutz/php-arrays-functional-programming)
 * [Jakob Oberhummer](https://at.linkedin.com/pub/jakob-oberhummer/5b/b71/643): [SESSION II -> SQL](../201604/01_ViennaPHP_SQL.pdf)
-
-
 
 
 March
