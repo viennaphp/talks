@@ -7,6 +7,7 @@ Storing all talk pdfs for the ViennaPHP Community
 March
 -----
 
+* [Johannes Pichler](https://johannespichler.com): [Refactoring to Collections](../201703/01_refactoring-to-collections.pdf)
 * [Michael Schramm](https://www.gosepp.com): [Building a Bot](../201703/03_building-a-bot.pdf)
 
 
