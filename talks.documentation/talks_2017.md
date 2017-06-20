@@ -3,6 +3,11 @@ viennaphp/talks (2017)
 
 Storing all talk pdfs for the ViennaPHP Community
 
+June
+-----
+* [Johannes Pichler](https://johannespichler.com): [Go for PHP devs](../201706/go-for-php-devs.pdf)
+
+
 April
 -----
 
