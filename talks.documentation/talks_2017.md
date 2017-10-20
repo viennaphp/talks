@@ -3,6 +3,10 @@ viennaphp/talks (2017)
 
 Storing all talk pdfs for the ViennaPHP Community
 
+October
+-----
+* [Christian Leo-Pernold](https://mazedlx.net): [What's new in Laravel 5.5](../201710/whats-new-in-laravel-5-5.pdf)
+
 June
 -----
 * [Johannes Pichler](https://johannespichler.com): [Go for PHP devs](../201706/go-for-php-devs.pdf)
@@ -32,4 +36,4 @@ February
 
 ## Go Back to Main page
 
-[README](../README.md)  
+[README](../README.md)
