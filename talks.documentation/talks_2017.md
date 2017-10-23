@@ -6,6 +6,7 @@ Storing all talk pdfs for the ViennaPHP Community
 October
 -----
 * [Christian Leo-Pernold](https://mazedlx.net): [What's new in Laravel 5.5](../201710/whats-new-in-laravel-5-5.pdf)
+* [Michael Schramm](https://blog.ms07.at): [PHP on Heroku](../201710/php-on-heroku.pdf)
 
 June
 -----
