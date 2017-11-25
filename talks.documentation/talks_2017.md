@@ -3,6 +3,11 @@ viennaphp/talks (2017)
 
 Storing all talk pdfs for the ViennaPHP Community
 
+November
+-----
+
+* [Emir Beganovic](https://github.com/emirb): [Increasing code quality: static analysis](../201711/increasing-code-quality-static-analysis.pdf)
+
 October
 -----
 * [Christian Leo-Pernold](https://mazedlx.net): [What's new in Laravel 5.5](../201710/whats-new-in-laravel-5-5.pdf)
