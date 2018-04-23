@@ -12,3 +12,4 @@ April
 -----
 
 * [Emir Beganovic](https://github.com/emirb): [Profiling and inspection with Blackfire.io](../201804/Profiling%20and%20inspection%20with%20Blackfire.pdf)
+* [Franz Wilding](https://unitecms.io): [Native JSON data type in MySQL](../201804/native_json_data_type_mysql_franz_wilding.pdf)
